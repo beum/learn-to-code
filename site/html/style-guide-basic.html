@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loverly Style Guide</title>
+    <style>
+      /* Browser Default Overrides */
+      * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        vertical-align: baseline;
+      }
+
+      html, body, main {
+        height: 100%;
+      }
+
+      /* Define the grid layout */
+
+      /* Push the grid to the right to account for inline-block corrections */
+      .grid { margin-right: 4px; }
+
+      /* Add the gutter to columns */
+      [class^="col-"] { margin-left: 20px; margin-right: -4px; }
+
+      /* Remove the gutter on the first column */
+      .col-first { margin-left: 0; }
+
+      /* Pre-defined column widths */
+      .col-01 { width: 45px; }
+      .col-02 { width: 110px; }
+      .col-03 { width: 175px; }
+      .col-04 { width: 240px; }
+      .col-05 { width: 305px; }
+      .col-06 { width: 370px; }
+      .col-07 { width: 435px; }
+      .col-08 { width: 500px; }
+      .col-09 { width: 565px; }
+      .col-10 { width: 630px; }
+      .col-11 { width: 695px; }
+      .col-12 { width: 760px; }
+      .col-13 { width: 825px; }
+      .col-14 { width: 890px; }
+      .col-15 { width: 1020px; }
+
+      /* Style guide specific grid layout */
+      section.grid {
+        margin-bottom: 20px;
+      }
+
+      section.grid ul.horizontal-block {
+        list-style-type: none;
+      }
+
+      section.grid ul.horizontal-block li {
+        display: inline-block;
+        border: none;
+        background-color: #CFCFCF;
+        padding: 10px 0;
+        line-height: 26px;
+        text-align: center;
+        color: #AAA;
+      }
+
+      /* Define the typography of the page */
+      h1 {
+        font-family: 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: .07em;
+        font-weight: normal;
+        color: #666;
+      }
+
+      h2 {
+        font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        line-height: 29px;
+        font-weight: normal;
+        color: #666;
+      }
+
+      h3 {}
+
+      h4 {}
+
+      h5 {}
+
+      h6 {}
+
+      * {
+        font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        color: #666;
+        font-size: 15px;
+        line-height: 19px;
+      }
+
+      /* Set the default page background */
+      .page {
+        background-color: #FAFAFA;
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      /* Center the page and give it a fixed-width layout */
+      .page .content {
+        width: 1020px;
+        margin: 0 auto;
+      }
+
+      /* Define the main page header styles */
+      .page-header {
+        padding: 80px 0 30px 0;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #AAA;
+      }
+      .page-header h1 {
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      section footer.centered {
+        text-align: center;
+      }
+
+      section footer.centered h2 {
+        text-align: center;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- <header></header> -->
+      <main class="content">
+        <article id="style-guide" class="guide">
+          <header class="page-header">
+            <h1>Loverly Style Guide</h1>
+          </header>
+          <section id="layouts">
+            <section id="single-column-grid" class="grid">
+              <ul class="horizontal-block">
+                <li class="col-first col-01">1</li>
+                <li class="col-01">2</li>
+                <li class="col-01">3</li>
+                <li class="col-01">4</li>
+                <li class="col-01">5</li>
+                <li class="col-01">6</li>
+                <li class="col-01">7</li>
+                <li class="col-01">8</li>
+                <li class="col-01">9</li>
+                <li class="col-01">10</li>
+                <li class="col-01">11</li>
+                <li class="col-01">12</li>
+                <li class="col-01">13</li>
+                <li class="col-01">14</li>
+                <li class="col-01">15</li>
+                <li class="col-01">16</li>
+              </ul>
+            </section>
+            <section id="two-column-grid" class="grid">
+              <ul class="horizontal-block">
+                <li class="col-first col-02">1</li>
+                <li class="col-02">2</li>
+                <li class="col-02">3</li>
+                <li class="col-02">4</li>
+                <li class="col-02">5</li>
+                <li class="col-02">6</li>
+                <li class="col-02">7</li>
+                <li class="col-02">8</li>
+              </ul>
+            </section>
+            <section id="four-column-grid" class="grid">
+              <ul class="horizontal-block">
+                <li class="col-first col-04">1</li>
+                <li class="col-04">2</li>
+                <li class="col-04">3</li>
+                <li class="col-04">4</li>
+              </ul>
+            </section>
+            <footer class="centered">
+              <h2>16 column grid - 20px gutters - 45px columns</h2>
+              <p>Site Width = 1020px</p>
+            </footer>
+          </section>
+          <section id="typography"></section>
+          <section id="colors"></section>
+          <section id="buttons"></section>
+          <section id="forms"></section>
+          <section id="icons"></section>
+          <section id="modules"></section>
+          </div>
+        </article>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
